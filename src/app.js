@@ -5,19 +5,17 @@ const hbs=require('hbs')
 const geocode=require('./utils/geocode')
 const forecast= require('./utils/forecast')
 publicDirectoryFolder=path.join(__dirname,'../public')
+const viewsPath = path.join(__dirname, '../template/views')
+const partialsPath = path.join(__dirname, '../template/partials')
 const port=process.env.PORT ||2500
 console.log(publicDirectoryFolder)
-viewsPath=path.join(__dirname,'../src/views/template'
-)
-
-partialspath=path.join(__dirname,'../src/views/template/partials')
 
 // Setup handlebars engine and views location
 app.set('view engine', 'hbs')
 app.set('views', viewsPath)
-hbs.registerPartials(partialspath)
+hbs.registerPartials(partialsPath)
 
-// Setup static directory to serve
+// Setup static directory to serve'
 app.use(express.static(publicDirectoryFolder))
 
 app.get('', (req, res) => {
@@ -117,5 +115,5 @@ if(!req.query.address){
 
 app.listen(port,()=>{
 
-    console.log('Servering up at port 2500'+port)
+    console.log('Servering up at port '+port)
 })
