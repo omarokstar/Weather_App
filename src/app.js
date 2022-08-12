@@ -5,6 +5,7 @@ const hbs=require('hbs')
 const geocode=require('./utils/geocode')
 const forecast= require('./utils/forecast')
 publicDirectoryFolder=path.join(__dirname,'../public')
+const port=process.env.PORT ||2500
 console.log(publicDirectoryFolder)
 viewsPath=path.join(__dirname,'../src/views/template'
 )
@@ -114,7 +115,7 @@ if(!req.query.address){
 
 
 
-app.listen(2500,()=>{
+app.listen(port,()=>{
 
-    console.log('Servering up at port 2500')
+    console.log('Servering up at port 2500'+port)
 })

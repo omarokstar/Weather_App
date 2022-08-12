@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.0.1",
+    "install": "^0.13.0",
+    "nodemon": "^2.0.19",
+    "request": "2.0",
+    "validator": "^13.7.0"
+  },
+  "name": "node",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": " node src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
