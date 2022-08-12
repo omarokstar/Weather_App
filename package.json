@@ -11,8 +11,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": " node src/app.js",
-    "dev":"node src/app.js -e js,hbs"
+    "start": " node src/app.js"
   },
   "keywords": [],
   "author": "",
